@@ -728,9 +728,3 @@ document.addEventListener('visibilitychange', () => {
   }
   disarmFallback();
 });
-
-
-if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-
-  navigator.serviceWorker.register(new URL('./sw.js', import.meta.url)).catch(() => {});
-}
