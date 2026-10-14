@@ -139,6 +139,7 @@ export function statsOf(base, entry) {
 
     rudeBusterCost: entry.weapon === 7 ? 100 : entry.weapon === 27 ? 0 : 125,
 
+    infTP: entry.weapon === 27;
     mantle: (entry.armor ?? []).includes(23) || entry.weapon === 27,
     equipped: eq,
   };
