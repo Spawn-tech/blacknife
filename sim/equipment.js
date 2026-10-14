@@ -35,7 +35,7 @@ export const WEAPONS = {
   24: { name: "ToxicAxe", at: 6, allowed: [1] },
   25: { name: "FlexScarf", at: 4, magic: 1, allowed: [2] },
   26: { name: "BlackShard", at: 16, allowed: [0, 3] },
-  27: { name: "FloweryGun", at: 999, df: 999, magic: 999, allowed: [0, 1, 2, 3], ability: "GrazeArea" },
+  27: { name: "FloweryGun", at: 999, df: 999, magic: 999, allowed: [0, 1, 2, 3], ability: "DETERMINATION" },
 };
 
 
@@ -70,9 +70,9 @@ export const ARMOR = {
 
 
 
-const GRAZE_TP = { 15: 0.1, 24: 0.05, 3: -0.2, 9: -0.25 };
-const GRAZE_TIME = { 14: 0.1, 3: -0.2 };
-const GRAZE_SIZE = { 3: 0.2, 9: 0.25 };
+const GRAZE_TP = { 15: 0.1, 24: 0.05, 3: -0.2, 9: -0.25, 27: 1};
+const GRAZE_TIME = { 14: 0.1, 3: -0.2, 27: 1};
+const GRAZE_SIZE = { 3: 0.2, 9: 0.25, 27: 1};
 
 
 export function partyWearing(loadout, id) {
