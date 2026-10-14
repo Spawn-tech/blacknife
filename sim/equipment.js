@@ -35,7 +35,7 @@ export const WEAPONS = {
   24: { name: "ToxicAxe", at: 6, allowed: [1] },
   25: { name: "FlexScarf", at: 4, magic: 1, allowed: [2] },
   26: { name: "BlackShard", at: 16, allowed: [0, 3] },
-  27: { name: "FloweryGun", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], ability: "DETERMINATION" },
+  27: { name: "FloweryGun", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], ability: "FloweryStat" },
 };
 
 
@@ -67,7 +67,7 @@ export const ARMOR = {
   25: { name: "GingerGuard", df: 3, allowed: [0, 1, 2, 3] },
   26: { name: "BlueRibbon", df: 1, magic: 1, allowed: [0, 2, 3], ability: "Heal+" },
   27: { name: "TennaTie", df: 5, magic: -2, allowed: [0, 1, 2, 3] },
-  28: { name: "TobyMantle", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], element: 5, elementAmount: 1, ability: "DogPower" },
+  28: { name: "TobyMantle", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], element: 5, elementAmount: 1, ability: "Dog" },
 };
 
 
