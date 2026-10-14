@@ -66,13 +66,15 @@ export const ARMOR = {
   24: { name: "LodeStone", df: 2, allowed: [0, 1, 2, 3], ability: "TPGain" },
   25: { name: "GingerGuard", df: 3, allowed: [0, 1, 2, 3] },
   26: { name: "BlueRibbon", df: 1, magic: 1, allowed: [0, 2, 3], ability: "Heal+" },
-  27: { name: "TennaTie", df: 5, magic: -2, allowed: [0, 1, 2, 3] },};
+  27: { name: "TennaTie", df: 5, magic: -2, allowed: [0, 1, 2, 3] },
+  28: { name: "TobyMantle", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], element: 5, elementAmount: 0.66, ability: "DogPower" },
+};
 
 
 
-const GRAZE_TP = { 15: 0.1, 24: 0.05, 3: -0.2, 9: -0.25, 27: 1};
-const GRAZE_TIME = { 14: 0.1, 3: -0.2, 27: 1};
-const GRAZE_SIZE = { 3: 0.2, 9: 0.25, 27: 1};
+const GRAZE_TP = { 15: 0.1, 24: 0.05, 3: -0.2, 9: -0.25, 28: 0.5};
+const GRAZE_TIME = { 14: 0.1, 3: -0.2, 28: 0.5};
+const GRAZE_SIZE = { 3: 0.2, 9: 0.25, 28: 0.5};
 
 
 export function partyWearing(loadout, id) {
@@ -133,11 +135,11 @@ export function statsOf(base, entry) {
     df,
     magic,
 
-    healRibbons: (entry.armor ?? []).filter((a) => a === 26).length,
+    healRibbons: entry.weapon === 27 ? 99 : (entry.armor ?? []).filter((a) => a === 26).length,
 
     rudeBusterCost: entry.weapon === 7 ? 100 : entry.weapon === 27 ? 0 : 125,
 
-    mantle: (entry.armor ?? []).includes(23),
+    mantle: (entry.armor ?? []).includes(23) || entry.weapon === 27,
     equipped: eq,
   };
 }
