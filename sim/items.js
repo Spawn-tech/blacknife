@@ -165,7 +165,8 @@ export function reviveAmount(state, target, which) {
 
   const maxhp = partyMaxhp(state, target);
   if (which === 'mint') return hp <= 0 ? maxhp - hp : Math.floor(maxhp * 0.5);
-  return hp <= 0 ? Math.floor(maxhp * 0.25) - hp : 10;
+  if (which === 'dust') return hp <= 0 ? Math.floor(maxhp * 0.25) - hp : 10;
+  return hp <= 0 ? maxhp - hp : 10;
 }
 
 
@@ -192,7 +193,7 @@ function itemEffect(state, item, target) {
     return scrHealitem(state, target, amount);
   }
   if (item.kind === 'revive') {
-    const which = item.name === 'ReviveMint' ? 'mint' : 'dust';
+    const which = item.name === 'ReviveMint' ? 'mint' : item.name === 'ReviveDust' ? 'dust' : 'brite';
     if (item.target === 'all') {
 
       let did = 0;
