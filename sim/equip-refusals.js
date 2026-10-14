@@ -135,6 +135,11 @@ export const WEAPON_REFUSALS = {
     2: "... how is this a weapon?",
     3: "I... shouldn't use it.",
     4: " "
+  },
+  26: {
+    2: "Oh this? It's my Ja-GUN-ra!",
+    3: "AAAAAAA I HATE FLOWERY ffsfsghdsfdf",
+    4: "I don't exist yet, fahahahaha!"
   }
 };
 
