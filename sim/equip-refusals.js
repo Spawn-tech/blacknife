@@ -267,5 +267,10 @@ export const ARMOR_REFUSALS = {
     2: "Bandana-style.",
     3: "Like a sash...?",
     4: "Look, I'm like a gift!"
+  },
+  28: {
+    2: "Badass.",
+    3: "KRIS WHY THE HELL DO YOU HAVE THIS",
+    4: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
   }
 };
