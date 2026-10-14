@@ -52,7 +52,7 @@ export const ITEMS = {
   37: { name: 'TVSlop', desc: 'Heals#80HP', target: 'one', kind: 'heal', amount: 80 },
   38: { name: 'ExecBuffet', desc: 'Heals#team#100HP', target: 'all', kind: 'heal', amount: 100 },
   39: { name: 'DeluxeDinner', desc: 'Heals#140HP', target: 'one', kind: 'heal', amount: 140 },
-  40: { name: 'PapyruSpageti', desc: 'Nyeh#heh#heh!', target: 'all', kind: 'heal', amount: 1190 },
+  40: { name: 'PapyruSpageti', desc: 'Nyeh#heh#heh!', target: 'all', kind: 'heal', amount: 9999 },
 };
 
 
