@@ -35,7 +35,7 @@ export const WEAPONS = {
   24: { name: "ToxicAxe", at: 6, allowed: [1] },
   25: { name: "FlexScarf", at: 4, magic: 1, allowed: [2] },
   26: { name: "BlackShard", at: 16, allowed: [0, 3] },
-  27: { name: "FloweryWeapon", at: 999, df: 999, magic: 999, allowed: [0, 1, 2, 3], ability: "GrazeArea" },
+  27: { name: "FloweryGun", at: 999, df: 999, magic: 999, allowed: [0, 1, 2, 3], ability: "GrazeArea" },
 };
 
 
