@@ -35,7 +35,7 @@ export const WEAPONS = {
   24: { name: "ToxicAxe", at: 6, allowed: [1] },
   25: { name: "FlexScarf", at: 4, magic: 1, allowed: [2] },
   26: { name: "BlackShard", at: 16, allowed: [0, 3] },
-  27: { name: "FloweryGun", at: 999, df: 999, magic: 999, allowed: [0, 1, 2, 3], ability: "DETERMINATION" },
+  27: { name: "FloweryGun", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], ability: "DETERMINATION" },
 };
 
 
@@ -135,7 +135,7 @@ export function statsOf(base, entry) {
 
     healRibbons: (entry.armor ?? []).filter((a) => a === 26).length,
 
-    rudeBusterCost: entry.weapon === 7 ? 100 : 125,
+    rudeBusterCost: entry.weapon === 7 ? 100 : entry.weapon === 27 ? 0 : 125,
 
     mantle: (entry.armor ?? []).includes(23),
     equipped: eq,
