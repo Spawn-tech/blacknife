@@ -137,10 +137,10 @@ export function statsOf(base, entry) {
 
     healRibbons: entry.weapon === 27 ? 99 : (entry.armor ?? []).filter((a) => a === 26).length,
 
-    rudeBusterCost: entry.weapon === 7 ? 100 : entry.weapon === 27 ? 0 : 125,
+    rudeBusterCost: entry.weapon === 7 ? 100 : 125,
 
     infTP: entry.weapon === 27,
-    mantle: (entry.armor ?? []).includes(23) || entry.weapon === 27,
+    mantle: (entry.armor ?? []).includes(23) || (entry.armor ?? []).includes(28),
     equipped: eq,
   };
 }
