@@ -136,7 +136,7 @@ export const WEAPON_REFUSALS = {
     3: "I... shouldn't use it.",
     4: " "
   },
-  26: {
+  27: {
     2: "Oh this? It's my Ja-GUN-ra!",
     3: "AAAAAAA I HATE FLOWERY ffsfsghdsfdf",
     4: "I don't exist yet, fahahahaha!"
