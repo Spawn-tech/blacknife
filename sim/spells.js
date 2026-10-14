@@ -155,6 +155,7 @@ export function spellCost(state, slot, spellId) {
   if (!s) return Infinity;
 
   if (spellId === 4) return statFor(state, slot).rudeBusterCost;
+  if (statFor(state, slot).infTP) return 0;
   return s.cost;
 }
 
