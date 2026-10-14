@@ -67,7 +67,7 @@ export const ARMOR = {
   25: { name: "GingerGuard", df: 3, allowed: [0, 1, 2, 3] },
   26: { name: "BlueRibbon", df: 1, magic: 1, allowed: [0, 2, 3], ability: "Heal+" },
   27: { name: "TennaTie", df: 5, magic: -2, allowed: [0, 1, 2, 3] },
-  28: { name: "TobyMantle", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], element: 5, elementAmount: 0.66, ability: "DogPower" },
+  28: { name: "TobyMantle", at: 99, df: 99, magic: 99, allowed: [0, 1, 2, 3], element: 5, elementAmount: 1, ability: "DogPower" },
 };
 
 
